@@ -1,0 +1,45 @@
+{
+  "name": "client",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "codegen": "graphql-codegen",
+    "codegen:watch": "graphql-codegen -w",
+    "lint": "eslint . --ext ts --ext tsx",
+    "format": "prettier --write \"**/*.{js,ts,tsx}\"",
+    "stylelint": "stylelint \"**/*.css\"",
+    "pretty": "yarn format && yarn lint --fix && yarn stylelint --fix"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.9.11",
+    "@tanstack/react-router": "^1.28.1",
+    "clsx": "^2.1.0",
+    "graphql": "^16.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^5.0.2",
+    "@graphql-codegen/client-preset": "^4.2.5",
+    "@graphql-typed-document-node/core": "^3.2.0",
+    "@parcel/watcher": "^2.4.1",
+    "@siberiacancode/eslint": "^1.1.0",
+    "@siberiacancode/stylelint": "^1.1.0",
+    "@tanstack/router-devtools": "^1.28.1",
+    "@tanstack/router-vite-plugin": "^1.26.21",
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "8.57.0",
+    "prettier": "^3.2.5",
+    "stylelint": "^16.3.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.0"
+  }
+}
